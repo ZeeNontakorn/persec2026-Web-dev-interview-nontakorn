@@ -30,8 +30,8 @@ npx tsc --noEmit
 | 1 | 1 Check Brackets | `([{}])` | `true` |
 | 2 | 2 Natural Sort | `TH19,SG20,TH2` | `[ 'SG20', 'TH2', 'TH19' ]` |
 | 3 | 3 Autocomplete | search `th` / items `Mother,Think,Worthy,Apple,Android` / maxResult `2` | `[ 'Think', 'Mother' ]` |
-| 4 | 4 ตัวเลข → โรมัน | `1989` | `MCMLXXXIX` |
-| 5 | 4 โรมัน → ตัวเลข | `MCMLXXXIX` | `1989` |
+| 4 | 4 ตัวเลข => โรมัน | `1989` | `MCMLXXXIX` |
+| 5 | 4 โรมัน => ตัวเลข | `MCMLXXXIX` | `1989` |
 | 6 | 5 Sort Digits Desc | `3008` | `8300` |
 | 7 | 6 Tribonacci | ค่าเริ่มต้น `1,3,5` / จำนวน `5` | `[ 1, 3, 5, 9, 17 ]` |
 
@@ -45,7 +45,7 @@ npx tsc --noEmit
 |---|---|---|---|---|
 | 1 | [src/q01-checkBrackets.ts](src/q01-checkBrackets.ts) | `checkBrackets(text)` | stack: เจอตัวเปิด push, เจอตัวปิดต้องตรงคู่กับตัวบนสุดแล้ว pop | O(n) / O(n) |
 | 2 | [src/q02-naturalSort.ts](src/q02-naturalSort.ts) | `naturalSort(items)` | `localeCompare` แบบ `numeric: true` บน array ที่คัดลอกมา | O(n log n) / O(n) |
-| 3 | [src/q03-autocomplete.ts](src/q03-autocomplete.ts) | `autocomplete(search, items, maxResult)` | filter แล้วแยก 3 กลุ่ม (ขึ้นต้น → กลาง → ท้าย) ต่อกันแล้ว slice | O(n·m) / O(n) |
+| 3 | [src/q03-autocomplete.ts](src/q03-autocomplete.ts) | `autocomplete(search, items, maxResult)` | filter แล้วแยก 3 กลุ่ม (ขึ้นต้น => กลาง => ท้าย) ต่อกันแล้ว slice | O(n·m) / O(n) |
 | 4 | [src/q04-romanNumerals.ts](src/q04-romanNumerals.ts) | `intToRoman(num)`, `romanToInt(roman)` | แยกเลขเป็นหลักแล้วดึงจากตาราง / อ่านซ้ายไปขวา ถ้าตัวนี้น้อยกว่าตัวถัดไปให้ลบ | O(1) / O(n) |
 | 5 | [src/q05-maxFromDigits.ts](src/q05-maxFromDigits.ts) | `sortDigitsDesc(number)` | แยกเป็นตัวอักษร เรียงมากไปน้อย รวมกลับเป็นตัวเลข | O(d log d) |
 | 6 | [src/q06-tribonacci.ts](src/q06-tribonacci.ts) | `tribonacci(starter, count)` | เติมค่าเริ่มต้นให้ครบ 3 ตัว สร้างต่อจนครบแล้ว slice | O(n) / O(n) |

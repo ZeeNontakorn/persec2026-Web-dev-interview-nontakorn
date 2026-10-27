@@ -2,7 +2,7 @@ import { describe, it, expect } from "vitest";
 import { tribonacci } from "../src/q06-tribonacci";
 
 /**
- * Q06 tribonacci — กรณีที่ทดสอบ
+ * Q06 tribonacci - กรณีที่ทดสอบ
  *  1) ตัวอย่างจากโจทย์ (3 ข้อ)
  *  2) เคสที่เพิ่มเอง: ค่าเริ่มต้นว่าง, count = 0, count น้อยกว่าจำนวนค่าเริ่มต้น,
  *     ค่าเริ่มต้นไม่ครบ 3 ตัว (เติม 0 ให้ครบ และนับรวมในผลลัพธ์),

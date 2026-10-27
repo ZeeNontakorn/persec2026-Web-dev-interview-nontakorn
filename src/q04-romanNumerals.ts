@@ -106,7 +106,7 @@ export function romanWarning(roman: string, value: number): string | undefined {
 
 export const q04A: Question = {
   id: "q04A",
-  title: "Roman: ตัวเลข → โรมัน",
+  title: "Roman: ตัวเลข => โรมัน",
   prompts: [
     {
       label: "กรอกหมายเลข: ",
@@ -122,7 +122,7 @@ export const q04A: Question = {
 
 export const q04B: Question = {
   id: "q04B",
-  title: "Roman: โรมัน → ตัวเลข",
+  title: "Roman: โรมัน => ตัวเลข",
   prompts: [
     {
       label: "กรอกหมายเลขโรมัน (เช่น MCMLXXXIX): ",

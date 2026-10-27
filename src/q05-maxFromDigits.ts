@@ -4,7 +4,7 @@ import type { Question } from "./types";
  * Q05: Sort Digits Descending
  * โจทย์: รับ positive int แล้วเรียงตัวเลขในแต่ละหลักจากมากไปน้อย คืนเป็น int
  *        เช่น 3008 => 8300, 1989 => 9981
- * แนวคิด: แปลงเป็น string → แยกเป็นทีละตัวอักษร → เรียงมากไปน้อย → รวมกลับ → แปลงเป็น number
+ * แนวคิด: แปลงเป็น string => แยกเป็นทีละตัวอักษร => เรียงมากไปน้อย => รวมกลับ => แปลงเป็น number
  *         (เลข 0 จะไปอยู่ท้ายเสมอเพราะเรียงจากมากไปน้อย)
  */
 export function sortDigitsDesc(number: number): number {
